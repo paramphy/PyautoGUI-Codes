@@ -36,4 +36,4 @@ with open("pos.txt", "r") as file:
 for x,y in word:
     print(x,y)
     pyautogui.moveTo(int(x), int(y), duration = 1)
-    time.sleep(.1)
+    time.sleep(.1) 
