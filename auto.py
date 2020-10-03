@@ -28,7 +28,12 @@ def ghost():
 #    posfile.write("\n")
 #    time.sleep(1)
 with open("pos.txt", "r") as file: 
+    word = []
     data = file.readlines() 
     for line in data: 
-        word = line.split(',') 
-        print(word) 
+        word.append(line.rstrip('\n').split(',')) 
+    print(word) 
+for x,y in word:
+    print(x,y)
+    pyautogui.moveTo(int(x), int(y), duration = 1)
+    time.sleep(.1)
