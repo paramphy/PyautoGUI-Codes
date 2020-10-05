@@ -13,8 +13,8 @@ def ghost():
     pyautogui.scroll(200) 
     pyautogui.moveTo(100, 100 + y, duration = 1)
     pyautogui.scroll(200)
-    print("#")
     
 while True:
     ghost()
+    print('#')
     time.sleep(20)
