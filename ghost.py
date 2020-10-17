@@ -16,5 +16,5 @@ def ghost():
     
 while True:
     ghost()
-    print('#')
+    #print('#')
     time.sleep(20)
